@@ -1,0 +1,83 @@
+.group-list {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.list-item {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 5px;
+  color: #000;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.list-item.editing {
+  margin-left: 10px;
+  width: calc(100% - 10px);
+}
+
+.item-left {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  overflow: hidden;
+}
+
+.grey-box {
+  background-color: #ccc;
+  color: #000;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.grey-box.edit {
+  justify-content: flex-end;
+  text-align: right;
+  width: auto;
+}
+
+.grey-box.short {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.grey-box.long {
+  justify-content: flex-start;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

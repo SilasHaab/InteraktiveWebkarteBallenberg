@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .header-left, .header-right {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
