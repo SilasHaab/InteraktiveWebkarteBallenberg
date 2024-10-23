@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-function Header({ leftHeaderText, rightHeaderText, leftLink, rightLink }) {
+function Header({ leftHeaderText, rightHeaderText, leftLink, rightLink, onRightClick }) {
   return (
     <header className="header">
       <h1 className="header-left">
@@ -14,14 +14,8 @@ function Header({ leftHeaderText, rightHeaderText, leftLink, rightLink }) {
           leftHeaderText
         )}
       </h1>
-      <h1 className="header-right">
-        {rightLink ? (
-          <Link to={rightLink} style={{ color: 'inherit', textDecoration: 'none' }}>
-            {rightHeaderText}
-          </Link>
-        ) : (
-          rightHeaderText
-        )}
+      <h1 className="header-right" onClick={onRightClick} style={{ cursor: 'pointer' }}>
+        {rightHeaderText}
       </h1>
     </header>
   );
